@@ -1,6 +1,7 @@
 body {
+    max-width: 1920px;
+    margin: auto;
     background-color:#F8F8F8;
-    margin: 0;
     padding: 0;
 }
 
@@ -19,7 +20,7 @@ body {
     src: url(fonts/TTLakes-Bold.woff);
 }
 
-.header {
+.mobile {
     background-color: #FFFFFF;
     min-height: 88px;   
     justify-content: center;
@@ -28,25 +29,21 @@ body {
     border-bottom: 2px solid #D9FFF5;
 } 
 
-.header-desktop {
+.desktop {
     margin: 0;
     display: none;
+    min-height: 130px;
+    justify-content: strart;
+    flex-wrap: wrap;
 }
 
-.header-desktop__header-desktop-content {
+.header__desktop {
     margin-right: 25px;
     margin-top: 42px;
 }
 
-.header-desktop-content {
-    min-height: 130px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.header-desktop-content__repair {
-    height: 40px;
+.desktop__repair {
+    height: 24px;
     margin-left: auto;
     color: inherit;
     text-decoration: none;
@@ -56,9 +53,10 @@ body {
     letter-spacing: -0.2px; 
 }
 
-.header-desktop-content__checkstatus {
-    height: 40px;
-    margin-left: 25px;
+.desktop__checkstatus {
+    height: 24px;
+    margin-left: 73px;
+    margin-right: 53px;
     color: inherit;
     text-decoration: none;
     font-family: TTLakes-Medium;
@@ -67,55 +65,68 @@ body {
     letter-spacing: -0.2px; 
 }
 
-.header-desktop-content__repair img, .header-desktop-content__checkstatus img {
-    margin-bottom: -16px;
+.desktop__repair-icon {
+    position: absolute;
+    width: 40px;
+    height: 40px;
     margin-left: 8px;
+    margin-top: -8px;
+    background-image: url(images/repair.svg);
 }
 
-.header-desktop-content__slide-menu {
+.desktop__checkstatus-icon {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    margin-left: 8px;
+    margin-top: -8px;
+    background-image: url(images/checkstatus.svg);
+}
+
+.desktop__slide-menu {
     margin-top: 8px;
-    min-width: 85%;
+    min-width: 65%;
 }
 
-.header__burger {
+.mobile__burger {
     margin-left: 16px;
     width: 40px;
     height: 40px;
 }
 
-.header__Group {
+.mobile__Group {
     margin-left:auto;
     width: 96.55px;
     height: 50.81px;
 }
 
-.header__divider--left {
+.mobile__divider--left {
     display: none;
 }
 
-.header__call {
-    display: none;
-    width: 40px;
-    height: 40px;
-}
-
-.header__chat {
+.mobile__call {
     display: none;
     width: 40px;
     height: 40px;
 }
 
-.header__profile {
+.mobile__chat {
     display: none;
     width: 40px;
     height: 40px;
 }
 
-.header__divider--right {
+.mobile__profile {
+    display: none;
+    width: 40px;
+    height: 40px;
+}
+
+.mobile__divider--right {
     display: none;
 }
 
-.header__divider {
+.mobile__divider {
     margin: auto;
     padding: 0;
     width: 1px;
@@ -127,7 +138,7 @@ body {
 
 
 
-.header__repair {
+.mobile__repair {
     margin-right: auto;
     width: 40px;
     height: 40px;
@@ -135,7 +146,7 @@ body {
 
 
 
-.header__checkstatus {
+.mobile__checkstatus {
     margin-right: 16px;
     width: 40px;
     height: 40px;
@@ -219,7 +230,7 @@ body {
     display: none;
 }
 
-.info_expand {
+.info__expand {
     margin-left: -32px;
     width: 24px;
     height: 24px;
@@ -227,7 +238,7 @@ body {
     background-image: url(images/expand.svg);
 }
 
-.info_button {
+.info__button {
     font-family: TTLakes-Medium;
     line-height: 24px;
     font-size: 16px;
@@ -237,89 +248,72 @@ body {
     background: none;
 }
 
-.block1__picture {   
-    margin-top: 16px;
+.block1__picture {
+    margin: 0;
     text-align: center;
+    margin-top: 16px;
 }
 
-.picture__img1 {
+.picture__main-image {
+    display: inline-block;
+    background-image: url(images/Picture\ Copy\ \(1\).png); 
+    position: static;
     margin: 0;
     width: 320px;
     height: 176px;
 }
 
-.picture__img2 {
-    display: none;
-    margin: 0;
-    width: 360px;
-    height: 208px;
+@media (min-width: 768px) {
 
-}
-
-.picture__img3 {
-    display: none;
-    margin: 0;
-    width: 531.35px;
-    height: 307px;
-}
-
-@media (min-width: 0) and (max-width: 1366px) {
-}
-
-@media (min-width: 768px) and (max-width: 1120px) {
-
-    .header__burger {
+    .mobile__burger {
         margin-left: 24px;
     }
 
-    .header__divider--left {
+    .mobile__divider--left {
         margin-left: 24px;
         display: block;
         margin-right: 24px;
     }
 
-    .header__Group {
+    .mobile__Group {
         margin-left: 0;
         margin-right: auto;    
- 
     }
 
-    .header__divider--center {
+    .mobile__divider--center {
         display: none;
     }
 
-
-    .header__call {
+    .mobile__call {
         margin-left: auto;
         margin-right: 0;
         display: block;
-
     }
 
-    .header__chat {
+    .mobile__chat {
         display: block;
         margin-right: 0;
         margin-left: 24px;
     }
 
-    .header__profile {
+    .mobile__profile {
         display: block;
         margin-right: 0;
         margin-left: 24px;
     }
 
-    .header__divider--right {
+    .mobile__divider--right {
         margin-right: 0;
         margin-left: 24px;
         display: block;
     }
 
-    .header__repair {
+    .mobile__repair {
         margin-left: 24px;
         margin-right: 0;
     }
 
-    .header__checkstatus {
+    .mobile__checkstatus {
         margin-left: 24px;
         margin-right: 24px;
     }
@@ -332,7 +326,6 @@ body {
         margin-left: 24px;
         margin-top: 32px;
     }
-
 
     .main__block1 {
         margin-bottom: 40px;
@@ -360,19 +353,19 @@ body {
         margin: 0;
         margin-left: 48px;
     }
-
-    .picture__img1 {
-        display: none;
-    }
     
-    .picture__img2 {
-        display: block;
-    }
+    .picture__main-image {
+        margin-left: 48px;
+        background-image: url(images/_MG_3223\ \(1\).png);
+        margin: 0;
+        width: 360px;
+        height: 208px;
+    }  
 }
 
-@media (min-width: 1121px) {
+@media (min-width: 1120px) {
 
-    .header {
+    .header__mobile {
         display: none;
     }
 
@@ -384,12 +377,11 @@ body {
         display: none;
     }
 
-    .header-desktop {
-        display: block;
+    .desktop {
+        display: flex;
     }
 
     .slide-menu {
-        padding-left: auto;
         margin-left: 33px;
         white-space: wrap;
     }
@@ -426,16 +418,10 @@ body {
         margin-left: 38x;
     }
 
-    .picture__img1 {
-        display: none;
+    .picture__main-image {
+        background-image: url(images/_MG_3223\ \(2\).png);
+        margin: 0;
+        width: 531.35px;
+        height: 307px;
     }
-    
-    .picture__img2 {
-        display: none;
-    }
-
-    .picture__img3 {
-        display: block;
-    }
-  
 }

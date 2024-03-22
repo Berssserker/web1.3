@@ -8,26 +8,26 @@
 </head>
 <body> 
     <header class="header"> 
-<a href="#" class="header__burger"><img src="images/burger.svg"></a>
-<span class="header__divider header__divider--left"></span>
-<img src="images/Group.svg" class="header__Group">
-<span class="header__divider header__divider--center"></span>
-<a class="header__call" href="#"><img src="images/call.svg"></a>
-<a class="header__chat" href="#"><img src="images/chat.svg"></a>
-<a class="header__profile" href="#"><img src="images/profile.svg"></a>
-<span class="header__divider header__divider--right"></span>
-<a href="#" class="header__repair"><img src="images/repair.svg"></a>
-<a href="#" class="header__checkstatus"><img src="images/checkstatus.svg"></a>
-</header>
-<header class="header-desktop">
-<div class="header-desktop__header-desktop-content header-desktop-content">
-    <section class="header-desktop-content__title title">   
+        <div class="header__mobile mobile">
+<a href="#" class="mobile__burger"><img src="images/burger.svg"></a>
+<span class="mobile__divider mobile__divider--left"></span>
+<img src="images/Group.svg" class="mobile__Group">
+<span class="mobile__divider mobile__divider--center"></span>
+<a class="mobile__call" href="#"><img src="images/call.svg"></a>
+<a class="mobile__chat" href="#"><img src="images/chat.svg"></a>
+<a class="mobile__profile" href="#"><img src="images/profile.svg"></a>
+<span class="mobile__divider mobile__divider--right"></span>
+<a href="#" class="mobile__repair"><img src="images/repair.svg"></a>
+<a href="#" class="mobile__checkstatus"><img src="images/checkstatus.svg"></a>
+</div>
+<div class="header__desktop desktop">
+    <section class="desktop__title title">   
         <span class="title__border"></span>
         <h1 class="title__text">Услуги и сервисы</h1>
     </section>
-    <a href="#" class="header-desktop-content__repair">Оставить заявку<img src="images/repair.svg"></a>
-    <a href="#" class="header-desktop-content__checkstatus">Статус ремонта<img src="images/checkstatus.svg"></a>
-    <nav class="header-desktop-content__slide-menu slide-menu">
+    <a href="#" class="desktop__repair">Оставить заявку<span class="desktop__repair-icon"></span></a>
+    <a href="#" class="desktop__checkstatus">Статус ремонта<span class="desktop__checkstatus-icon"></span></a>
+    <nav class="desktop__slide-menu slide-menu">
         <button class="slide-menu__button" type="button" autofocus>Ремонтируемые устройства</button>
         <button class="slide-menu__button" type="button">Дополнительные услуги</button>
         <button class="slide-menu__button" type="button">Цены на услуги</button>
@@ -54,13 +54,11 @@
             <article class="block1__info info">
             <p class="info__text">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>  
             <p class="info__text info__text--hidden">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера</p>
-            <button class="info_button" type="button"><span class="info_expand"></span>Читать далее</button>
+            <button class="info__button" type="button"><span class="info__expand"></span>Читать далее</button>
             </article>
-            <div class="block1__picture picture">
-                <img class="picture__img1" src="images/Picture Copy (1).png">
-                <img class="picture__img2" src="images/_MG_3223 (1).png">
-                <img class="picture__img3" src="images/_MG_3223 (2).png">
-            </div>
+            <figure class="block1__picture picture">
+                <div class="picture__main-image"></div>
+                </figure>
         </section>
     </main>
 </body>
