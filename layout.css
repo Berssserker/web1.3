@@ -1,6 +1,6 @@
 body {
     max-width: 1920px;
-    margin: auto;
+    margin: 0;
     background-color:#F8F8F8;
     padding: 0;
 }
@@ -411,7 +411,7 @@ body {
 
     .block1__picture {
         margin: 0;
-        margin-left: 38x;
+        margin-left: 38px;
     }
 
     .picture__main-image {
