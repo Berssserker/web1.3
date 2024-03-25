@@ -251,12 +251,10 @@ body {
 }
 
 .picture__main-image {
-    display: inline-block;
-    background-image: url(images/picture1.png); 
-    position: static;
+    
     margin: 0;
-    width: 320px;
-    height: 176px;
+    max-width: 100%;
+    height: auto;
 }
 
 @media (min-width: 768px) {
@@ -337,6 +335,7 @@ body {
     }
 
     .info__text {
+        width: 312px;
         margin-bottom: 8px;
         line-height: 20px;
     }
@@ -349,13 +348,12 @@ body {
         margin: 0;
         margin-left: 48px;
     }
-    
+
     .picture__main-image {
         margin-left: 48px;
-        background-image: url(images/picture2.png);
         margin: 0;
-        width: 360px;
-        height: 208px;
+        min-width: 360px;
+        height: auto;
     }  
 }
 
@@ -395,6 +393,7 @@ body {
     }
 
     .info__text {
+        width: auto;
         margin-top: 9px;
         margin-bottom: 14px;
         text-align:start;
@@ -415,9 +414,8 @@ body {
     }
 
     .picture__main-image {
-        background-image: url(images/picture3.png);
         margin: 0;
-        width: 531.35px;
-        height: 307px;
+        min-width: 531.35px;
+        height: auto;
     }
 }
