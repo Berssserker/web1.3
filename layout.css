@@ -252,7 +252,7 @@ body {
 
 .picture__main-image {
     display: inline-block;
-    background-image: url(images/Picture1.png); 
+    background-image: url(images/picture1.png); 
     position: static;
     margin: 0;
     width: 320px;
@@ -352,7 +352,7 @@ body {
     
     .picture__main-image {
         margin-left: 48px;
-        background-image: url(images/Picture2.png);
+        background-image: url(images/picture2.png);
         margin: 0;
         width: 360px;
         height: 208px;
@@ -415,7 +415,7 @@ body {
     }
 
     .picture__main-image {
-        background-image: url(images/Picture3.png);
+        background-image: url(images/picture3.png);
         margin: 0;
         width: 531.35px;
         height: 307px;
