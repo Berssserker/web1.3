@@ -95,7 +95,7 @@ body {
 }
 
 .mobile__Group {
-    margin-left:auto;
+    margin-left:16px;
     width: 96.55px;
     height: 50.81px;
 }
@@ -122,12 +122,9 @@ body {
     height: 40px;
 }
 
-.mobile__divider--right {
-    display: none;
-}
-
 .mobile__divider {
-    margin: auto;
+    margin-left: auto;
+    margin-right: 16px;
     padding: 0;
     width: 1px;
     height: 32px;
@@ -139,7 +136,7 @@ body {
 
 
 .mobile__repair {
-    margin-right: auto;
+    margin-right: 16px;
     width: 40px;
     height: 40px;
 }
@@ -204,11 +201,11 @@ body {
     border-radius: 6px;
 }
 
-.main__block1 {
+.main__block {
     margin-top: 24px; 
 }
 
-.block1__info {
+.block__info {
     margin-left: 16px;
     margin-right: 16px;  
 }
@@ -244,9 +241,9 @@ body {
     background: none;
 }
 
-.block1__picture {
+.block__picture {
     margin: 0;
-    text-align: center;
+    text-align: start;
     margin-top: 16px;
 }
 
@@ -272,10 +269,6 @@ body {
     .mobile__Group {
         margin-left: 0;
         margin-right: auto;    
-    }
-
-    .mobile__divider--center {
-        display: none;
     }
 
     .mobile__call {
@@ -321,7 +314,7 @@ body {
         margin-top: 32px;
     }
 
-    .main__block1 {
+    .main__block {
         margin-bottom: 40px;
         justify-content: start;
         margin-left: 24px;
@@ -330,7 +323,7 @@ body {
         display: flex;
     }
 
-    .block1__info {
+    .block__info {
         margin: 0;
     }
 
@@ -344,7 +337,7 @@ body {
         display: block;
     }
 
-    .block1__picture {
+    .block__picture {
         margin: 0;
         margin-left: 48px;
     }
@@ -355,6 +348,17 @@ body {
         min-width: 360px;
         height: auto;
     }  
+}
+
+@media (min-width: 940px) {
+
+    .picture__main-image {        
+        min-width: 531.35px;
+    }
+
+    .info__text {
+        width: auto;
+    }
 }
 
 @media (min-width: 1120px) {
@@ -384,7 +388,7 @@ body {
         margin-left: 29px;
     }
 
-    .main__block1 {
+    .main__block {
         justify-content: center;
         display: flex;
         margin-top: 7px;
@@ -408,7 +412,7 @@ body {
         content: ", что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.";
     }
 
-    .block1__picture {
+    .block__picture {
         margin: 0;
         margin-left: 38px;
     }
